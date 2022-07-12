@@ -1,0 +1,27 @@
+.brach_card{
+    width: 250px;
+    padding: 2rem 0;
+    box-shadow: 0 0 6px black;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s;
+    .card_img_box{
+        width:150px;
+    
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .branch_card_sname{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    &:hover{
+        transform: scale(1.1);
+    }
+}
