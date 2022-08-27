@@ -1,6 +1,6 @@
 import React from "react"
 import "./style.scss"
-import BranchCard from "./cardBranch/BranchCard"
+import BranchCard from "../cardBranch/BranchCard"
 const Branch = () => {
   const branchArray = [
     { name: "IT", img: "assets/IT.png"},

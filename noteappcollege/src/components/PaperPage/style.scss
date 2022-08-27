@@ -1,0 +1,35 @@
+.paper_page_container {
+  margin: 2% 10%;
+  .filter_section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .paper_page_container_body {
+    margin: 2% 0;
+    .paper_data {
+      margin: 2% 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1482d936;
+      padding: 1% 2%;
+      border-radius: 7px;
+      .left {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .name {
+          line-height: 0;
+          width: 150px;
+        }
+        .sem{
+          width: 100px;
+        }
+        .icons_data {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

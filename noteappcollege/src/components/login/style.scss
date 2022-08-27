@@ -1,0 +1,15 @@
+.login_page_container {
+  .header {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .body {
+    width: 50%;
+    .form_group {
+      margin-bottom: 20px;
+      .label {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
