@@ -35,14 +35,8 @@ const AddDataPage = () => {
     if (data.title !== "" && data.url !== "") {
       const res = await addDoc(collection(db, "DATA TEST"), data)
       alert("Data Added")
-      const obj = {
-        title: "",
-        url: "",
-        semester: "",
-        branch: "",
-        type: "",
-      }
-      setdata(obj)
+
+      setdata({ ...data, title: "", url: "" })
     } else {
       alert("Data Is Not Added Please Check Blank Field")
     }

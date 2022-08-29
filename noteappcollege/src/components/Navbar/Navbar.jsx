@@ -15,7 +15,7 @@ const Navbar = () => {
     if (localStorage.getItem("token") !== null) {
       setUser(true)
     }
-  }, [])
+  }, [localStorage.getItem("token")])
 
   return (
     <>
@@ -43,7 +43,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/resource">
                   Previous Papers
                 </Link>
               </li>

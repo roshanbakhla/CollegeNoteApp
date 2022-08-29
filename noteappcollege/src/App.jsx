@@ -15,6 +15,7 @@ import PaperPage from "./components/PaperPage"
 import AddDataPage from "./components/addDataPage"
 import LoginPage from "./components/login"
 import AuthProvider from "./store/context/auth"
+import Home from "./components/Home/Home"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import "./app.scss"
@@ -45,7 +46,8 @@ function App() {
       <div className="main_container">
         <AuthProvider>
           <Routes>
-            <Route path="/" element={<PaperPage data={data} />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/resource" element={<PaperPage data={data} />} />
             <Route path="/adddata" element={<AddDataPage />} />
             <Route path="/login" element={<LoginPage />} />
           </Routes>
